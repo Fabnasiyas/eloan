@@ -1,5 +1,4 @@
 import sideImage from '../assets/sideimage.png';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Twostep = () => {
@@ -57,15 +56,15 @@ const Twostep = () => {
           </form>
         ) : (
           <form className="w-full max-w-sm">
-            <button
-              onClick={handleSendEmail}
-              className="bg-yellow-600 text-white py-5 px-4 rounded w-full shadow-md mb-12"
-            >
-              Send Email
-            </button>
-            <button className="py-5 px-4 border rounded w-full shadow-md">Cancel</button>
-            {/* <p>skip</p> */}
-          </form>
+  <button
+    onClick={handleSendEmail}
+    className="bg-yellow-600 text-white py-5 px-4 rounded w-full shadow-md mb-12"
+  >
+    Send Email
+  </button>
+  <button className="py-5 px-4 border rounded w-full shadow-md mb-2">Cancel</button>
+  <p className="text-right text-yellow-600 ">skip</p>
+</form>
         )}
       </div>
     </div>
